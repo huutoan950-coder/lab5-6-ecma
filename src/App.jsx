@@ -1,46 +1,76 @@
-import { Toaster } from "react-hot-toast";
-import { Link } from "react-router-dom";
+import { Routes, Route, NavLink } from "react-router-dom";
+import TourList from "./pages/TourList";
+import TourAdd from "./pages/TourAdd"; // Import trang thêm
+import TourEdit from "./pages/TourEdit"; // Import trang sửa
 
 function App() {
   return (
-    <>
-      <nav className="bg-blue-600 text-white shadow">
-        <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-          <Link to="#" className="text-xl font-semibold">
-            <strong>WEB501 App</strong>
-          </Link>
-
-          <div className="hidden md:flex items-center space-x-8">
-            <Link to="#" className="hover:text-gray-200">
-              Trang chủ
-            </Link>
-            <Link to="#" className="hover:text-gray-200">
-              Danh sách
-            </Link>
-            <Link to="#" className="hover:text-gray-200">
-              Thêm mới
-            </Link>
-          </div>
-
-          <div className="hidden md:flex items-center space-x-6">
-            <Link to="#" className="hover:text-gray-200">
-              Đăng nhập
-            </Link>
-            <Link to="#" className="hover:text-gray-200">
-              Đăng ký
-            </Link>
-          </div>
+    <div>
+      <header className="bg-blue-600 shadow-md">
+        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+          <h1 className="text-white text-2xl font-bold">WEB501 App</h1>
+          <nav>
+            <ul className="flex space-x-6 text-white font-medium">
+              <li>
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-yellow-300 underline"
+                      : "hover:text-yellow-200"
+                  }
+                >
+                  Trang chủ
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/tours"
+                  end
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-yellow-300 underline"
+                      : "hover:text-yellow-200"
+                  }
+                >
+                  Danh sách
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/tours/add"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-yellow-300 underline"
+                      : "hover:text-yellow-200"
+                  }
+                >
+                  Thêm mới
+                </NavLink>
+              </li>
+            </ul>
+          </nav>
         </div>
-      </nav>
+      </header>
 
-      {/* MAIN CONTENT */}
-      <div className="max-w-6xl mx-auto mt-10 px-4 text-center">
-        <h1 className="text-4xl font-bold mb-4">Chào mừng đến với WEB501</h1>
-        <p className="text-lg text-gray-600">Ứng dụng quản lý dữ liệu</p>
-      </div>
+      <main className="py-8 bg-gray-50 min-h-screen">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <div className="text-center text-2xl mt-10">
+                Chào mừng đến với WEB501
+              </div>
+            }
+          />
+          <Route path="/tours" element={<TourList />} />
 
-      <Toaster />
-    </>
+          {/* Định nghĩa 2 đường dẫn mới */}
+          <Route path="/tours/add" element={<TourAdd />} />
+          <Route path="/tours/edit/:id" element={<TourEdit />} />
+        </Routes>
+      </main>
+    </div>
   );
 }
 

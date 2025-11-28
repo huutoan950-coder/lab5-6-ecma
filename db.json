@@ -1,0 +1,94 @@
+{
+  "tours": [
+    {
+      "id": 4,
+      "name": "Phú Quốc - Đảo Ngọc",
+      "destination": "Phú Quốc",
+      "duration": "3 ngày 2 đêm",
+      "price": 5500000,
+      "image": "https://picsum.photos/400/300?random=4",
+      "description": "Lặn ngắm san hô và thưởng thức hải sản tươi sống.",
+      "available": 8
+    },
+    {
+      "id": 5,
+      "name": "Nha Trang - Vinpearl Land",
+      "destination": "Nha Trang",
+      "duration": "3 ngày 2 đêm",
+      "price": 4100000,
+      "image": "https://picsum.photos/400/300?random=5",
+      "description": "Vui chơi thả ga tại thiên đường giải trí Vinpearl.",
+      "available": 25
+    },
+    {
+      "id": 6,
+      "name": "Huế - Đà Nẵng - Hội An",
+      "destination": "Miền Trung",
+      "duration": "5 ngày 4 đêm",
+      "price": 6200000,
+      "image": "https://picsum.photos/400/300?random=6",
+      "description": "Hành trình di sản miền Trung cực kỳ hấp dẫn.",
+      "available": 12
+    },
+    {
+      "id": 7,
+      "name": "Quy Nhơn - Kỳ Co - Eo Gió",
+      "destination": "Bình Định",
+      "duration": "3 ngày 2 đêm",
+      "price": 3500000,
+      "image": "https://picsum.photos/400/300?random=7",
+      "description": "Khám phá Maldives phiên bản Việt Nam.",
+      "available": 18
+    },
+    {
+      "id": 8,
+      "name": "Hà Giang - Mùa hoa Tam Giác Mạch",
+      "destination": "Hà Giang",
+      "duration": "3 ngày 2 đêm",
+      "price": 2800000,
+      "image": "https://picsum.photos/400/300?random=8",
+      "description": "Ngắm nhìn cao nguyên đá hùng vĩ.",
+      "available": 30
+    },
+    {
+      "id": 9,
+      "name": "Miền Tây - Chợ nổi Cái Răng",
+      "destination": "Cần Thơ",
+      "duration": "2 ngày 1 đêm",
+      "price": 1900000,
+      "image": "https://picsum.photos/400/300?random=9",
+      "description": "Trải nghiệm văn hóa sông nước miệt vườn.",
+      "available": 22
+    },
+    {
+      "id": 10,
+      "name": "Côn Đảo - Vùng đất linh thiêng",
+      "destination": "Vũng Tàu",
+      "duration": "2 ngày 1 đêm",
+      "price": 4500000,
+      "image": "https://picsum.photos/400/300?random=10",
+      "description": "Tham quan di tích lịch sử và tắm biển hoang sơ.",
+      "available": 5
+    },
+    {
+      "id": 11,
+      "name": "Mộc Châu - Mùa hoa cải",
+      "destination": "Sơn La",
+      "duration": "2 ngày 1 đêm",
+      "price": 1500000,
+      "image": "https://picsum.photos/400/300?random=11",
+      "description": "Săn mây và chụp ảnh tại đồi chè trái tim.",
+      "available": 40
+    },
+    {
+      "id": 12,
+      "name": "Phong Nha Kẻ Bàng - Quảng Bình",
+      "destination": "Quảng Bình",
+      "duration": "3 ngày 2 đêm",
+      "price": 3200000,
+      "image": "https://picsum.photos/400/300?random=12",
+      "description": "Khám phá hệ thống hang động kỳ vĩ nhất thế giới.",
+      "available": 14
+    }
+  ]
+}
