@@ -76,7 +76,6 @@ const TourEdit = () => {
           />
         </div>
 
-        {}
         <div className="grid grid-cols-2 gap-4">
           <div>
             <label className="block text-gray-700 font-bold mb-2">
@@ -104,7 +103,6 @@ const TourEdit = () => {
           </div>
         </div>
 
-        {}
         <div className="grid grid-cols-2 gap-4">
           <div>
             <label className="block text-gray-700 font-bold mb-2">
@@ -134,7 +132,6 @@ const TourEdit = () => {
           </div>
         </div>
 
-        {}
         <div>
           <label className="block text-gray-700 font-bold mb-2">Link Ảnh</label>
           <input
@@ -146,7 +143,6 @@ const TourEdit = () => {
           />
         </div>
 
-        {}
         <div>
           <label className="block text-gray-700 font-bold mb-2">Mô tả</label>
           <textarea
@@ -158,7 +154,6 @@ const TourEdit = () => {
           ></textarea>
         </div>
 
-        {}
         <div className="flex items-center">
           <input
             type="checkbox"

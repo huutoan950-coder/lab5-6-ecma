@@ -4,7 +4,6 @@ function AddPage() {
       <h1 className="text-2xl font-semibold mb-6">Thêm mới</h1>
 
       <form className="space-y-6">
-        {/* Text input */}
         <div>
           <label htmlFor="text" className="block font-medium mb-1">
             Text
@@ -16,7 +15,6 @@ function AddPage() {
           />
         </div>
 
-        {/* Checkbox list */}
         <div>
           <label className="block font-medium mb-1">Radio</label>
 
@@ -43,7 +41,6 @@ function AddPage() {
           </div>
         </div>
 
-        {/* Select */}
         <div>
           <label htmlFor="selectOption" className="block font-medium mb-1">
             Select - option
@@ -58,7 +55,6 @@ function AddPage() {
           </select>
         </div>
 
-        {/* Submit button */}
         <button
           type="submit"
           className="px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"

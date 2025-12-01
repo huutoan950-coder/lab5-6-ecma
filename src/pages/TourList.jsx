@@ -38,7 +38,6 @@ const TourList = () => {
         Danh sách Tour
       </h2>
 
-      {/* Kiểm tra nếu không có tour nào thì báo user */}
       {tours.length === 0 ? (
         <p className="text-center text-red-500">
           Chưa có dữ liệu hoặc chưa chạy server (npm run server)
@@ -87,7 +86,6 @@ const TourList = () => {
                       </button>
                     </Link>
 
-                    {/* Nút Xóa gọi hàm handleDelete */}
                     <button
                       onClick={() => handleDelete(tour.id)}
                       className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 transition"

@@ -65,7 +65,6 @@ function App() {
           />
           <Route path="/tours" element={<TourList />} />
 
-          {/* Định nghĩa 2 đường dẫn mới */}
           <Route path="/tours/add" element={<TourAdd />} />
           <Route path="/tours/edit/:id" element={<TourEdit />} />
         </Routes>

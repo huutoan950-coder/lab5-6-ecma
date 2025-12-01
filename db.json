@@ -89,6 +89,17 @@
       "image": "https://picsum.photos/400/300?random=12",
       "description": "Khám phá hệ thống hang động kỳ vĩ nhất thế giới.",
       "available": 14
+    },
+    {
+      "name": "Tour du lịch Đà Nẵng 3 ngày 2 đêm",
+      "price": 10000000,
+      "image": "https://picsum.photos/400/300?random=1",
+      "description": "Du lịch trải nghiệm các vùng biển, ngắm phố và ăn uống",
+      "duration": "3 ngày 2 đêm",
+      "available": 15,
+      "category": "Tour nội địa",
+      "active": true,
+      "id": 13
     }
   ]
 }

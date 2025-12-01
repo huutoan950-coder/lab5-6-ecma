@@ -51,7 +51,6 @@ const TourAdd = () => {
       </h2>
 
       <form onSubmit={handleSubmit} className="space-y-4">
-        {}
         <div>
           <label className="block text-gray-700 font-bold mb-2">Tên Tour</label>
           <input
@@ -65,7 +64,6 @@ const TourAdd = () => {
           />
         </div>
 
-        {}
         <div className="grid grid-cols-2 gap-4">
           <div>
             <label className="block text-gray-700 font-bold mb-2">
@@ -97,7 +95,6 @@ const TourAdd = () => {
           </div>
         </div>
 
-        {/* Hàng 3: Thời lượng (Duration) và Danh mục (Category - Select Box) */}
         <div className="grid grid-cols-2 gap-4">
           <div>
             <label className="block text-gray-700 font-bold mb-2">
@@ -129,7 +126,6 @@ const TourAdd = () => {
           </div>
         </div>
 
-        {}
         <div>
           <label className="block text-gray-700 font-bold mb-2">Link Ảnh</label>
           <input
@@ -142,7 +138,6 @@ const TourAdd = () => {
           />
         </div>
 
-        {}
         <div>
           <label className="block text-gray-700 font-bold mb-2">Mô tả</label>
           <textarea
@@ -155,7 +150,6 @@ const TourAdd = () => {
           ></textarea>
         </div>
 
-        {}
         <div className="flex items-center">
           <input
             type="checkbox"
@@ -170,7 +164,6 @@ const TourAdd = () => {
           </label>
         </div>
 
-        {}
         <button
           type="submit"
           className="w-full bg-blue-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-700 transition duration-300"
