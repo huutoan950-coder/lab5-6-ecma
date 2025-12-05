@@ -5,7 +5,7 @@ import { tourService } from "../services/api";
 
 const TourList = () => {
   const [tours, setTours] = useState([]);
-  const [search, setSearch] = useState(""); // Chỉ dùng 1 biến state cho tìm kiếm
+  const [search, setSearch] = useState("");
 
   useEffect(() => {
     loadTours();
