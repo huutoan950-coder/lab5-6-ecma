@@ -1,72 +1,54 @@
-import { Routes, Route, NavLink } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import ProtectedRoute from "./components/ProtectedRoute";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 import TourList from "./pages/TourList";
-import TourAdd from "./pages/TourAdd"; // Import trang thêm
-import TourEdit from "./pages/TourEdit"; // Import trang sửa
+import TourForm from "./pages/TourForm";
 
 function App() {
+  const navigate = useNavigate();
+  const user = JSON.parse(localStorage.getItem("user"));
+
+  const handleLogout = () => {
+    localStorage.clear();
+    navigate("/login");
+  };
+
   return (
     <div>
-      <header className="bg-blue-600 shadow-md">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-white text-2xl font-bold">WEB501 App</h1>
-          <nav>
-            <ul className="flex space-x-6 text-white font-medium">
-              <li>
-                <NavLink
-                  to="/"
-                  className={({ isActive }) =>
-                    isActive
-                      ? "text-yellow-300 underline"
-                      : "hover:text-yellow-200"
-                  }
-                >
-                  Trang chủ
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/tours"
-                  end
-                  className={({ isActive }) =>
-                    isActive
-                      ? "text-yellow-300 underline"
-                      : "hover:text-yellow-200"
-                  }
-                >
-                  Danh sách
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/tours/add"
-                  className={({ isActive }) =>
-                    isActive
-                      ? "text-yellow-300 underline"
-                      : "hover:text-yellow-200"
-                  }
-                >
-                  Thêm mới
-                </NavLink>
-              </li>
-            </ul>
-          </nav>
+      <ToastContainer position="top-right" autoClose={3000} />
+      <header className="bg-blue-600 text-white p-4 shadow-md">
+        <div className="container mx-auto flex justify-between items-center">
+          <h1 className="text-xl font-bold uppercase">Quản lý Tour Du Lịch</h1>
+          {user ? (
+            <div className="flex items-center gap-4">
+              <span className="font-medium">Xin chào, {user.email}</span>
+              <button
+                onClick={handleLogout}
+                className="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded text-sm transition"
+              >
+                Đăng xuất
+              </button>
+            </div>
+          ) : (
+            <span className="text-sm italic">Vui lòng đăng nhập</span>
+          )}
         </div>
       </header>
 
-      <main className="py-8 bg-gray-50 min-h-screen">
+      <main className="bg-gray-50 min-h-screen">
         <Routes>
-          <Route
-            path="/"
-            element={
-              <div className="text-center text-2xl mt-10">
-                Chào mừng đến với WEB501
-              </div>
-            }
-          />
-          <Route path="/tours" element={<TourList />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
 
-          <Route path="/tours/add" element={<TourAdd />} />
-          <Route path="/tours/edit/:id" element={<TourEdit />} />
+          <Route element={<ProtectedRoute />}>
+            <Route path="/" element={<TourList />} />
+            <Route path="/tours" element={<TourList />} />
+            <Route path="/tours/add" element={<TourForm />} />
+            <Route path="/tours/edit/:id" element={<TourForm />} />
+          </Route>
         </Routes>
       </main>
     </div>

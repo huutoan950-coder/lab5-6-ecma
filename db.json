@@ -1,105 +1,256 @@
 {
+  "users": [
+    {
+      "email": "huutoan950@gmail.com",
+      "password": "Huutoan2006a@@@@",
+      "id": 1
+    },
+    {
+      "email": "huutoan9500@gmail.com",
+      "password": "$2a$10$aa7aLvTytTf1Jd9y37/SI.hoOpxwuQvbinpwfwnZ4eGj3lw/m.Yoa",
+      "id": 2
+    }
+  ],
   "tours": [
     {
-      "id": 4,
-      "name": "Phú Quốc - Đảo Ngọc",
-      "destination": "Phú Quốc",
+      "id": 1,
+      "name": "Hà Nội - Sapa - Fansipan",
+      "destination": "Sapa",
       "duration": "3 ngày 2 đêm",
-      "price": 5500000,
+      "price": 2500000,
+      "image": "https://picsum.photos/400/300?random=1",
+      "description": "Chinh phục nóc nhà Đông Dương và ngắm ruộng bậc thang mùa lúa chín.",
+      "available": 15,
+      "category": "Tour nội địa",
+      "active": true
+    },
+    {
+      "id": 2,
+      "name": "Bangkok - Pattaya (Thái Lan)",
+      "destination": "Thái Lan",
+      "duration": "5 ngày 4 đêm",
+      "price": 6500000,
+      "image": "https://picsum.photos/400/300?random=2",
+      "description": "Khám phá xứ sở chùa vàng, thiên đường mua sắm và ẩm thực đường phố.",
+      "available": 20,
+      "category": "Tour quốc tế",
+      "active": false
+    },
+    {
+      "id": 3,
+      "name": "Đà Lạt - Săn mây Cầu Gỗ",
+      "destination": "Đà Lạt",
+      "duration": "4 ngày 3 đêm",
+      "price": 3200000,
+      "image": "https://picsum.photos/400/300?random=3",
+      "description": "Check-in những địa điểm hot nhất tại xứ sở sương mù và thưởng thức cafe chồn.",
+      "available": 10,
+      "category": "Tour nội địa",
+      "active": true
+    },
+    {
+      "id": 4,
+      "name": "Singapore - Đảo Sentosa",
+      "destination": "Singapore",
+      "duration": "4 ngày 3 đêm",
+      "price": 10990000,
       "image": "https://picsum.photos/400/300?random=4",
-      "description": "Lặn ngắm san hô và thưởng thức hải sản tươi sống.",
-      "available": 8
+      "description": "Tham quan công viên sư tử biển, Gardens by the Bay và Universal Studios.",
+      "available": 5,
+      "category": "Tour quốc tế",
+      "active": false
     },
     {
       "id": 5,
-      "name": "Nha Trang - Vinpearl Land",
-      "destination": "Nha Trang",
+      "name": "Phú Quốc - Grand World",
+      "destination": "Phú Quốc",
       "duration": "3 ngày 2 đêm",
-      "price": 4100000,
+      "price": 5500000,
       "image": "https://picsum.photos/400/300?random=5",
-      "description": "Vui chơi thả ga tại thiên đường giải trí Vinpearl.",
-      "available": 25
+      "description": "Lặn ngắm san hô, vui chơi tại thành phố không ngủ Grand World.",
+      "available": 8,
+      "category": "Tour nội địa",
+      "active": true
     },
     {
       "id": 6,
+      "name": "Seoul - Nami - Everland (Hàn Quốc)",
+      "destination": "Hàn Quốc",
+      "duration": "5 ngày 4 đêm",
+      "price": 14500000,
+      "image": "https://picsum.photos/400/300?random=6",
+      "description": "Trải nghiệm mặc Hanbok, thăm đảo Nami lãng mạn và công viên Everland.",
+      "available": 0,
+      "category": "Tour quốc tế",
+      "active": true
+    },
+    {
+      "id": 7,
+      "name": "Nha Trang - VinWonders",
+      "destination": "Nha Trang",
+      "duration": "3 ngày 2 đêm",
+      "price": 4100000,
+      "image": "https://picsum.photos/400/300?random=7",
+      "description": "Vui chơi thả ga tại thiên đường giải trí VinWonders và tắm bùn khoáng.",
+      "available": 25,
+      "category": "Tour nội địa",
+      "active": false
+    },
+    {
+      "id": 8,
+      "name": "Tokyo - Núi Phú Sĩ (Nhật Bản)",
+      "destination": "Nhật Bản",
+      "duration": "6 ngày 5 đêm",
+      "price": 28900000,
+      "image": "https://picsum.photos/400/300?random=8",
+      "description": "Ngắm hoa anh đào, tắm Onsen và thưởng thức Sushi chính hiệu.",
+      "available": 12,
+      "category": "Tour quốc tế",
+      "active": true
+    },
+    {
+      "id": 9,
       "name": "Huế - Đà Nẵng - Hội An",
       "destination": "Miền Trung",
       "duration": "5 ngày 4 đêm",
       "price": 6200000,
-      "image": "https://picsum.photos/400/300?random=6",
-      "description": "Hành trình di sản miền Trung cực kỳ hấp dẫn.",
-      "available": 12
+      "image": "https://picsum.photos/400/300?random=9",
+      "description": "Hành trình di sản miền Trung: Cố đô Huế, Phố cổ Hội An và Bà Nà Hills.",
+      "available": 12,
+      "category": "Tour nội địa",
+      "active": false
     },
     {
-      "id": 7,
-      "name": "Quy Nhơn - Kỳ Co - Eo Gió",
-      "destination": "Bình Định",
-      "duration": "3 ngày 2 đêm",
-      "price": 3500000,
-      "image": "https://picsum.photos/400/300?random=7",
-      "description": "Khám phá Maldives phiên bản Việt Nam.",
-      "available": 18
+      "id": 10,
+      "name": "Bali - Thiên đường nhiệt đới",
+      "destination": "Indonesia",
+      "duration": "4 ngày 3 đêm",
+      "price": 8990000,
+      "image": "https://picsum.photos/400/300?random=10",
+      "description": "Sống ảo tại Cổng trời Bali, xích đu tử thần và ruộng bậc thang Tegalalang.",
+      "available": 18,
+      "category": "Tour quốc tế",
+      "active": true
     },
     {
-      "id": 8,
+      "id": 11,
       "name": "Hà Giang - Mùa hoa Tam Giác Mạch",
       "destination": "Hà Giang",
       "duration": "3 ngày 2 đêm",
       "price": 2800000,
-      "image": "https://picsum.photos/400/300?random=8",
-      "description": "Ngắm nhìn cao nguyên đá hùng vĩ.",
-      "available": 30
+      "image": "https://picsum.photos/400/300?random=11",
+      "description": "Chinh phục đèo Mã Pí Lèng và đi thuyền trên sông Nho Quế.",
+      "available": 30,
+      "category": "Tour nội địa",
+      "active": true
     },
     {
-      "id": 9,
+      "id": 12,
+      "name": "Phượng Hoàng Cổ Trấn (Trung Quốc)",
+      "destination": "Trung Quốc",
+      "duration": "6 ngày 5 đêm",
+      "price": 9500000,
+      "image": "https://picsum.photos/400/300?random=12",
+      "description": "Khám phá vẻ đẹp cổ kính nghìn năm tuổi và Trương Gia Giới hùng vĩ.",
+      "available": 10,
+      "category": "Tour quốc tế",
+      "active": false
+    },
+    {
+      "id": 13,
       "name": "Miền Tây - Chợ nổi Cái Răng",
       "destination": "Cần Thơ",
       "duration": "2 ngày 1 đêm",
       "price": 1900000,
-      "image": "https://picsum.photos/400/300?random=9",
-      "description": "Trải nghiệm văn hóa sông nước miệt vườn.",
-      "available": 22
+      "image": "https://picsum.photos/400/300?random=13",
+      "description": "Trải nghiệm văn hóa sông nước miệt vườn, nghe đờn ca tài tử.",
+      "available": 22,
+      "category": "Tour nội địa",
+      "active": true
     },
     {
-      "id": 10,
+      "id": 14,
       "name": "Côn Đảo - Vùng đất linh thiêng",
       "destination": "Vũng Tàu",
       "duration": "2 ngày 1 đêm",
       "price": 4500000,
-      "image": "https://picsum.photos/400/300?random=10",
-      "description": "Tham quan di tích lịch sử và tắm biển hoang sơ.",
-      "available": 5
+      "image": "https://picsum.photos/400/300?random=14",
+      "description": "Viếng mộ cô Sáu và tắm biển tại bãi Đầm Trầu hoang sơ.",
+      "available": 5,
+      "category": "Tour nội địa",
+      "active": false
     },
     {
-      "id": 11,
+      "id": 15,
+      "name": "Sydney - Melbourne (Úc)",
+      "destination": "Úc",
+      "duration": "7 ngày 6 đêm",
+      "price": 45900000,
+      "image": "https://picsum.photos/400/300?random=15",
+      "description": "Tham quan nhà hát con sò, cầu cảng Sydney và công viên Kangaroo.",
+      "available": 8,
+      "category": "Tour quốc tế",
+      "active": true
+    },
+    {
+      "id": 16,
       "name": "Mộc Châu - Mùa hoa cải",
       "destination": "Sơn La",
       "duration": "2 ngày 1 đêm",
       "price": 1500000,
-      "image": "https://picsum.photos/400/300?random=11",
-      "description": "Săn mây và chụp ảnh tại đồi chè trái tim.",
-      "available": 40
+      "image": "https://picsum.photos/400/300?random=16",
+      "description": "Săn mây Tà Xùa và chụp ảnh tại đồi chè trái tim xanh mướt.",
+      "available": 40,
+      "category": "Tour nội địa",
+      "active": true
     },
     {
-      "id": 12,
+      "id": 17,
       "name": "Phong Nha Kẻ Bàng - Quảng Bình",
       "destination": "Quảng Bình",
       "duration": "3 ngày 2 đêm",
       "price": 3200000,
-      "image": "https://picsum.photos/400/300?random=12",
-      "description": "Khám phá hệ thống hang động kỳ vĩ nhất thế giới.",
-      "available": 14
+      "image": "https://picsum.photos/400/300?random=17",
+      "description": "Khám phá hệ thống hang động kỳ vĩ nhất thế giới và suối Moọc.",
+      "available": 14,
+      "category": "Tour nội địa",
+      "active": false
     },
     {
-      "name": "Tour du lịch Đà Nẵng 3 ngày 2 đêm",
-      "price": 10000000,
-      "image": "https://picsum.photos/400/300?random=1",
-      "description": "Du lịch trải nghiệm các vùng biển, ngắm phố và ăn uống",
-      "duration": "3 ngày 2 đêm",
+      "id": 18,
+      "name": "Dubai - Sa mạc Safari",
+      "destination": "Dubai",
+      "duration": "6 ngày 5 đêm",
+      "price": 26900000,
+      "image": "https://picsum.photos/400/300?random=18",
+      "description": "Chiêm ngưỡng tòa tháp cao nhất thế giới Burj Khalifa và đua xe trên cát.",
       "available": 15,
+      "category": "Tour quốc tế",
+      "active": true
+    },
+    {
+      "id": 19,
+      "name": "Tà Đùng - Vịnh Hạ Long Tây Nguyên",
+      "destination": "Đắk Nông",
+      "duration": "2 ngày 1 đêm",
+      "price": 2200000,
+      "image": "https://picsum.photos/400/300?random=19",
+      "description": "Cắm trại và săn mây tại hồ Tà Đùng thơ mộng.",
+      "available": 20,
       "category": "Tour nội địa",
-      "active": true,
-      "id": 13
+      "active": false
+    },
+    {
+      "id": 20,
+      "name": "Paris - Rome - Venice (Châu Âu)",
+      "destination": "Châu Âu",
+      "duration": "9 ngày 8 đêm",
+      "price": 55000000,
+      "image": "https://picsum.photos/400/300?random=20",
+      "description": "Hành trình lãng mạn qua 3 nước Pháp - Thụy Sĩ - Ý.",
+      "available": 6,
+      "category": "Tour quốc tế",
+      "active": true
     }
   ]
 }
